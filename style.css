@@ -1,0 +1,101 @@
+/*
+  Author & Contact
+  Name: Mohith Sai Gadde
+  Student ID: 02209215
+  Email: MohithSai_Gadde@student.uml.edu
+  GitHub Repository:
+  GitHub Pages (Live Demo):
+*/
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  text-align: center;
+}
+
+.score-panel {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+
+#board {
+  width: 1125px;         
+  height: 75px;
+  margin: 0 auto 20px auto;
+  background-image: url("graphics_data/Scrabble_Board_OneLine.png");
+  background-size: 1125px 75px;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.square {
+  width: 75px;
+  height: 75px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tile {
+  width: 70px;
+  height: 70px;
+  cursor: move;
+  position: absolute;
+}
+
+.tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.square .tile {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+#rack {
+  width: 640px;
+  height: 182px;
+  margin: 0 auto;
+  background-image: url("graphics_data/scrabble-tile-holder-406774_640.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.message {
+  margin-top: 15px;
+  color: #b22222;
+  font-size: 14px;
+}

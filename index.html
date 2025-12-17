@@ -1,0 +1,65 @@
+<!--
+  Author & Contact
+  Name: Mohith Sai Gadde
+  Student ID: 02209215
+  Email: MohithSai_Gadde@student.uml.edu
+  GitHub Repository: 
+  GitHub Pages (Live Demo): 
+-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Scrabble One-Line</title>
+
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <div class="page">
+    <h1>Scrabble One-Line Board</h1>
+
+    <div class="score-panel">
+      <div>Current Word Score: <span id="current-word-score">0</span></div>
+      <div>Total Score: <span id="total-score">0</span></div>
+      <div>Tiles Remaining: <span id="tiles-remaining">0</span></div>
+    </div>
+
+    <h2>Board</h2>
+    <div id="board">
+      <div class="square" data-index="0"  data-letter-mult="1" data-word-mult="3"></div>
+      <div class="square" data-index="1"  data-letter-mult="1" data-word-mult="1"></div>
+      <div class="square" data-index="2"  data-letter-mult="2" data-word-mult="1"></div>
+      <div class="square" data-index="3"  data-letter-mult="1" data-word-mult="1"></div>
+      <div class="square" data-index="4"  data-letter-mult="1" data-word-mult="1"></div>
+      <div class="square" data-index="5"  data-letter-mult="1" data-word-mult="1"></div>
+      <div class="square" data-index="6"  data-letter-mult="1" data-word-mult="3"></div>
+      <div class="square" data-index="7"  data-letter-mult="1" data-word-mult="1"></div>
+      <div class="square" data-index="8"  data-letter-mult="2" data-word-mult="1"></div>
+      <div class="square" data-index="9"  data-letter-mult="1" data-word-mult="1"></div>
+      <div class="square" data-index="10" data-letter-mult="1" data-word-mult="1"></div>
+      <div class="square" data-index="11" data-letter-mult="1" data-word-mult="1"></div>
+      <div class="square" data-index="12" data-letter-mult="1" data-word-mult="3"></div>
+      <div class="square" data-index="13" data-letter-mult="1" data-word-mult="1"></div>
+      <div class="square" data-index="14" data-letter-mult="1" data-word-mult="1"></div>
+    </div>
+
+    <h2>Tile Rack</h2>
+    <div id="rack"></div>
+
+    <div class="controls">
+      <button id="play-word">Play Word</button>
+      <button id="restart-game">Restart Game</button>
+    </div>
+
+    <div id="message" class="message"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
